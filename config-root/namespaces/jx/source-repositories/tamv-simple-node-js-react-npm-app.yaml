@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: tamv
+    provider: github
+    repository: simple-node-js-react-npm-app
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: tamv-simple-node-js-react-npm-app
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/tamv/simple-node-js-react-npm-app.git
+  org: tamv
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: simple-node-js-react-npm-app
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/tamv/simple-node-js-react-npm-app

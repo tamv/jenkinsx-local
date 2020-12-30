@@ -9,5 +9,6 @@ spec:
     providerKind: github
     repositories:
     - name: jenkins-x-nodejs
+    - name: simple-node-js-react-npm-app
     - name: test-jenkins-x-nodejs
     scheduler: in-repo

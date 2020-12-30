@@ -9,6 +9,7 @@ data:
       enabled:
         tamv/jenkins-x-nodejs: true
         tamv/jenkinsx-local: true
+        tamv/simple-node-js-react-npm-app: true
         tamv/test-jenkins-x-nodejs: true
     plank: {}
     pod_namespace: jx
@@ -23,6 +24,7 @@ data:
       merge_method:
         tamv/jenkins-x-nodejs: merge
         tamv/jenkinsx-local: merge
+        tamv/simple-node-js-react-npm-app: merge
         tamv/test-jenkins-x-nodejs: merge
       queries:
       - labels:
@@ -36,6 +38,7 @@ data:
         repos:
         - tamv/jenkinsx-local
         - tamv/jenkins-x-nodejs
+        - tamv/simple-node-js-react-npm-app
         - tamv/test-jenkins-x-nodejs
       - labels:
         - updatebot
@@ -48,6 +51,7 @@ data:
         repos:
         - tamv/jenkinsx-local
         - tamv/jenkins-x-nodejs
+        - tamv/simple-node-js-react-npm-app
         - tamv/test-jenkins-x-nodejs
       target_url: http://dashboard-jx.192.168.64.2.nip.io
 kind: ConfigMap
