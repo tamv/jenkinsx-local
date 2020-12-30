@@ -1,0 +1,17 @@
+filepath: ""
+environments:
+  default:
+    values:
+    - jx-values.yaml
+namespace: jx-staging
+repositories:
+- name: dev
+  url: http://bucketrepo.jx.svc.cluster.local/bucketrepo/charts/
+releases:
+- chart: dev/jenkins-x-nodejs
+  version: 1.0.1
+  name: jenkins-x-nodejs
+  values:
+  - jx-values.yaml
+templates: {}
+renderedvalues: {}

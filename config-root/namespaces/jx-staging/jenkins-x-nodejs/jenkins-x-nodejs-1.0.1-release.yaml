@@ -1,0 +1,49 @@
+# Source: jenkins-x-nodejs/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-12-30T18:09:24Z"
+  deletionTimestamp: null
+  name: 'jenkins-x-nodejs-1.0.1'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: release 1.0.1
+      sha: 84eec249fcbc7ed6a31208c74040838db93934f2
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: add variables
+      sha: ac055a3d00ab0cf5b7066439ccc74d460bed768f
+    - author:
+        email: tam.virulhakieat@gmail.com
+        name: Tamanon Virulhakieat
+      branch: master
+      committer:
+        email: tam.virulhakieat@gmail.com
+        name: Tamanon Virulhakieat
+      message: |
+        chore: Jenkins X build pack
+      sha: 1d26837d3859909bbda71d2c07703bc946a40ff6
+  gitHttpUrl: https://github.com/tamv/jenkins-x-nodejs
+  gitOwner: tamv
+  gitRepository: jenkins-x-nodejs
+  name: 'jenkins-x-nodejs'
+  releaseNotesURL: https://github.com/tamv/jenkins-x-nodejs/releases/tag/v1.0.1
+  version: v1.0.1
+status: {}

@@ -1,0 +1,8 @@
+# Source: jenkins-x-nodejs/templates/sa.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: jenkins-x-nodejs-jenkins-x-nodejs
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
