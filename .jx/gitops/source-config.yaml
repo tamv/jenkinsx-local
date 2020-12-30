@@ -11,3 +11,11 @@ spec:
     - name: jenkins-x-nodejs
     - name: test-jenkins-x-nodejs
     scheduler: in-repo
+  jenkinsServers:
+  - groups:
+    - owner: tamv
+      provider: https://github.com
+      providerKind: github
+      repositories:
+      - name: simple-node-js-react-npm-app
+    server: hackaton-ci
