@@ -12,6 +12,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - tamv/simple-node-js-react-npm-app
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - tamv/test-jenkins-x-nodejs
       require_self_approval: true
     cat: {}
@@ -61,6 +65,22 @@ data:
       - cat
       - dog
       - pony
+      tamv/simple-node-js-react-npm-app:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       tamv/test-jenkins-x-nodejs:
       - approve
       - assign
@@ -91,6 +111,9 @@ data:
       trusted_org: todo
     - repos:
       - tamv/jenkins-x-nodejs
+      trusted_org: todo
+    - repos:
+      - tamv/simple-node-js-react-npm-app
       trusted_org: todo
     - repos:
       - tamv/test-jenkins-x-nodejs
