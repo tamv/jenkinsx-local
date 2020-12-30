@@ -1,0 +1,59 @@
+# Source: jenkins-x-nodejs/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jenkins-x-nodejs-jenkins-x-nodejs
+  labels:
+    draft: draft-app
+    chart: "jenkins-x-nodejs-1.0.1"
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  namespace: jx-staging
+  annotations:
+    wave.pusher.com/update-on-config-change: 'true'
+spec:
+  selector:
+    matchLabels:
+      app: jenkins-x-nodejs-jenkins-x-nodejs
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        draft: draft-app
+        app: jenkins-x-nodejs-jenkins-x-nodejs
+    spec:
+      serviceAccountName: jenkins-x-nodejs-jenkins-x-nodejs
+      containers:
+        - name: jenkins-x-nodejs
+          image: "10.101.42.61/tamv/jenkins-x-nodejs:1.0.1"
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: VERSION
+              value: 1.0.1
+          envFrom: null
+          ports:
+            - containerPort: 8080
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 8080
+            initialDelaySeconds: 60
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 1
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 8080
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 1
+          resources:
+            limits:
+              cpu: 400m
+              memory: 256Mi
+            requests:
+              cpu: 200m
+              memory: 128Mi
+      terminationGracePeriodSeconds:
+      imagePullSecrets:
+        - name: "tekton-container-registry-auth"
