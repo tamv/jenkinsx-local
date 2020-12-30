@@ -13,5 +13,8 @@ releases:
   name: jenkins-x-nodejs
   values:
   - jx-values.yaml
+- chart: dev/simple-node-js-react-npm-app
+  version: 0.1.1
+  name: simple-node-js-react-npm-app
 templates: {}
 renderedvalues: {}
