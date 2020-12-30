@@ -30,16 +30,20 @@ jxRequirements:
     provider: minikube
   environments:
   - key: dev
+    owner: tamv
+    repository: jenkinsx-local
   - key: staging
   - key: production
   ingress:
-    domain: ""
+    domain: 192.168.64.2.nip.io
     externalDNS: false
     namespaceSubDomain: -secret-infra.
     tls:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: jenkin-x
   repository: bucketrepo
   secretStorage: vault
   vault: {}
