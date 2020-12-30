@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: tamv
+    provider: github
+    repository: test-jenkins-x-nodejs
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: tamv-test-jenkins-x-nodejs
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/tamv/test-jenkins-x-nodejs.git
+  org: tamv
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: test-jenkins-x-nodejs
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/tamv/test-jenkins-x-nodejs
