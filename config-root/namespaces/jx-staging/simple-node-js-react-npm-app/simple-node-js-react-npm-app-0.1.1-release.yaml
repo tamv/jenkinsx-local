@@ -1,0 +1,471 @@
+# Source: simple-node-js-react-npm-app/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-12-30T19:29:47Z"
+  deletionTimestamp: null
+  name: 'simple-node-js-react-npm-app-0.1.1'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: release 0.1.1
+      sha: a733b281db3a02a71ee693fd95f3bd62bf21f160
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: add variables
+      sha: d0ab9eb555596ccee0559d145b8e4cb24376e0a2
+    - author:
+        email: tam.virulhakieat@gmail.com
+        name: Tamanon Virulhakieat
+      branch: master
+      committer:
+        email: tam.virulhakieat@gmail.com
+        name: Tamanon Virulhakieat
+      message: |
+        chore: Jenkins X build pack
+      sha: d5bc1b340a0aeecd8622814e49491696cf81111d
+    - author:
+        email: tam.virulhakieat@gmail.com
+        name: Tamanon Virulhakieat
+      branch: master
+      committer:
+        email: tam.virulhakieat@gmail.com
+        name: Tamanon Virulhakieat
+      message: |
+        Update new GHA
+      sha: e366580613b38b53b5195b5bc765520807706ea5
+    - author:
+        email: tam.virulhakieat@gmail.com
+        name: Tamanon Virulhakieat
+      branch: master
+      committer:
+        email: tam.virulhakieat@gmail.com
+        name: Tamanon Virulhakieat
+      message: |
+        update docker build
+      sha: ef96cc48712c88c51da4b7835efbf705e5e5b01a
+    - author:
+        email: tam.virulhakieat@gmail.com
+        name: Tamanon Virulhakieat
+      branch: master
+      committer:
+        email: tam.virulhakieat@gmail.com
+        name: Tamanon Virulhakieat
+      message: |
+        Adding Docker build on Jenkins
+      sha: 3ff5c014a7a5b6afd43b3d87de768a52e7f06480
+    - author:
+        email: 5770882+tamv@users.noreply.github.com
+        name: Tamanon Virulhakieat
+      branch: master
+      committer:
+        email: noreply@github.com
+        name: GitHub
+      message: Update create-review-app.yml
+      sha: 2ec039c3daed9b2c3f84826efc18de5c96d4436f
+    - author:
+        email: 5770882+tamv@users.noreply.github.com
+        name: Tamanon Virulhakieat
+      branch: master
+      committer:
+        email: noreply@github.com
+        name: GitHub
+      message: Update create-review-app.yml
+      sha: e833580bbe222a258c7b39b32f863d59ac555bd7
+    - author:
+        email: 5770882+tamv@users.noreply.github.com
+        name: Tamanon Virulhakieat
+      branch: master
+      committer:
+        email: noreply@github.com
+        name: GitHub
+      message: Update create-review-app.yml
+      sha: db0cd0e4b4d29f12467e991d98cede284a4e3abe
+    - author:
+        email: 5770882+tamv@users.noreply.github.com
+        name: Tamanon Virulhakieat
+      branch: master
+      committer:
+        email: noreply@github.com
+        name: GitHub
+      message: Update create-review-app.yml
+      sha: 1bc74c3379d83df957ad542a37961489d077abe9
+    - author:
+        email: 5770882+tamv@users.noreply.github.com
+        name: Tamanon Virulhakieat
+      branch: master
+      committer:
+        email: noreply@github.com
+        name: GitHub
+      message: Update create-review-app.yml
+      sha: fecc474be39d0ed66f31deb8937c1d4b004655e0
+    - author:
+        email: 5770882+tamv@users.noreply.github.com
+        name: Tamanon Virulhakieat
+      branch: master
+      committer:
+        email: noreply@github.com
+        name: GitHub
+      message: Update create-review-app.yml
+      sha: c08ebdfc4b4d4d3c17e9459972d13272358ef4d2
+    - author:
+        email: tam.virulhakieat@gmail.com
+        name: Tamanon Virulhakieat
+      branch: master
+      committer:
+        email: tam.virulhakieat@gmail.com
+        name: Tamanon Virulhakieat
+      message: |
+        Update to use github action
+      sha: 206c4e0640e4ac382236bf5b2b46e0a8c896cbe2
+    - author:
+        email: 5770882+tamv@users.noreply.github.com
+        name: Tamanon Virulhakieat
+      branch: master
+      committer:
+        email: noreply@github.com
+        name: GitHub
+      message: Create main.yml
+      sha: 035c30469cad0198b8b79ebd52db53faf580d9dc
+    - author:
+        email: tam.virulhakieat@gmail.com
+        name: Tamanon Virulhakieat
+      branch: master
+      committer:
+        email: tam.virulhakieat@gmail.com
+        name: Tamanon Virulhakieat
+      message: |
+        Add Travis Build
+      sha: 1976ebdcc45c6c18e956efc5f8da435fc4d8c1a7
+    - author:
+        email: tam.virulhakieat@gmail.com
+        name: Tamanon Virulhakieat
+      branch: master
+      committer:
+        email: tam.virulhakieat@gmail.com
+        name: Tamanon Virulhakieat
+      message: |
+        Update
+      sha: ea02eff7b985ae1fc16166e732fea085cf1affdd
+    - author:
+        email: tam.virulhakieat@gmail.com
+        name: Tamanon Virulhakieat
+      branch: master
+      committer:
+        email: tam.virulhakieat@gmail.com
+        name: Tamanon Virulhakieat
+      message: |
+        Running Build In parallel
+      sha: 745755d768d8a22dada9829e4700f295e5b38d76
+    - author:
+        email: tam.virulhakieat@gmail.com
+        name: Tamanon Virulhakieat
+      branch: master
+      committer:
+        email: tam.virulhakieat@gmail.com
+        name: Tamanon Virulhakieat
+      message: |
+        Adding Docker Builds
+      sha: 2724cabc1f53a55a255b8f28dd3ac1cd76feff99
+    - author:
+        email: tam.virulhakieat@gmail.com
+        name: Tamanon Virulhakieat
+      branch: master
+      committer:
+        email: tam.virulhakieat@gmail.com
+        name: Tamanon Virulhakieat
+      message: |
+        Update To Use NPM CI
+      sha: 48216d10389ead6d69504d2d5f95e587624a22db
+    - author:
+        email: 5770882+tamv@users.noreply.github.com
+        name: Tamanon Virulhakieat
+      branch: master
+      committer:
+        email: noreply@github.com
+        name: GitHub
+      message: Update Jenkinsfile
+      sha: 6dabdebbd7125a0a0330d3eef07272b9a7078999
+    - author:
+        email: 5770882+tamv@users.noreply.github.com
+        name: Tamanon Virulhakieat
+      branch: master
+      committer:
+        email: noreply@github.com
+        name: GitHub
+      message: Update Jenkinsfile
+      sha: 9dcd552434fc689797b1860e7fee6cfefce697ce
+    - author:
+        email: 5770882+tamv@users.noreply.github.com
+        name: Tamanon Virulhakieat
+      branch: master
+      committer:
+        email: noreply@github.com
+        name: GitHub
+      message: Update Jenkinsfile
+      sha: e9c210dfd03efefd708bd52b205ad62261586181
+    - author:
+        email: 5770882+tamv@users.noreply.github.com
+        name: Tamanon Virulhakieat
+      branch: master
+      committer:
+        email: noreply@github.com
+        name: GitHub
+      message: test node version
+      sha: ef92d59770617a73845adab1a698dc9f0cb523d3
+    - author:
+        email: 5770882+tamv@users.noreply.github.com
+        name: Tamanon Virulhakieat
+      branch: master
+      committer:
+        email: 5770882+tamv@users.noreply.github.com
+        name: Tamanon Virulhakieat
+      message: test
+      sha: 0aaa94651fed3821101461e61af42322627f5216
+    - author:
+        email: 5770882+tamv@users.noreply.github.com
+        name: Tamanon Virulhakieat
+      branch: master
+      committer:
+        email: noreply@github.com
+        name: GitHub
+      message: Update Jenkinsfile
+      sha: 2e1946b71dcf894ca32fe946d5c02d3f059670a4
+    - author:
+        email: 5770882+tamv@users.noreply.github.com
+        name: Tamanon Virulhakieat
+      branch: master
+      committer:
+        email: 5770882+tamv@users.noreply.github.com
+        name: Tamanon Virulhakieat
+      message: try running on docker
+      sha: fcb9b0d8f4b91b3f1aaacec78beed0d14180b7e2
+    - author:
+        email: 5770882+tamv@users.noreply.github.com
+        name: Tamanon Virulhakieat
+      branch: master
+      committer:
+        email: 5770882+tamv@users.noreply.github.com
+        name: Tamanon Virulhakieat
+      message: Added Jenkinsfile
+      sha: 8c89b9adb4da221eef96afcda04e32d0d5f72995
+    - author:
+        email: 5770882+tamv@users.noreply.github.com
+        name: Tamanon Virulhakieat
+      branch: master
+      committer:
+        email: noreply@github.com
+        name: GitHub
+      message: Update and rename Jenkinsfile to Jenkinsfile-test
+      sha: d70e77f2dd7300e83099788400965032f062ddd4
+    - author:
+        email: 5770882+tamv@users.noreply.github.com
+        name: Tamanon Virulhakieat
+      branch: master
+      committer:
+        email: noreply@github.com
+        name: GitHub
+      message: Update Jenkinsfile
+      sha: 09810a21de5033d8b2c27d119bfcbbec63d48b2d
+    - author:
+        email: 5770882+tamv@users.noreply.github.com
+        name: Tamanon Virulhakieat
+      branch: master
+      committer:
+        email: noreply@github.com
+        name: GitHub
+      message: Update Jenkinsfile
+      sha: 5290f3febccea16de865127bc4cfccd916c0b7a0
+    - author:
+        email: 5770882+tamv@users.noreply.github.com
+        name: Tamanon Virulhakieat
+      branch: master
+      committer:
+        email: noreply@github.com
+        name: GitHub
+      message: Update Jenkinsfile
+      sha: dcb7243515336f95712a5a2dea9eabdc23aa3ba1
+    - author:
+        email: 5770882+tamv@users.noreply.github.com
+        name: Tamanon Virulhakieat
+      branch: master
+      committer:
+        email: noreply@github.com
+        name: GitHub
+      message: Update Jenkinsfile
+      sha: 192123897f13a95f0cbe000d3270d9c5ccd5473f
+    - author:
+        email: 5770882+tamv@users.noreply.github.com
+        name: Tamanon Virulhakieat
+      branch: master
+      committer:
+        email: noreply@github.com
+        name: GitHub
+      message: Update Jenkinsfile
+      sha: 56c16f05ec8ea9d3e87648998852a0d0239f82a0
+    - author:
+        email: 5770882+tamv@users.noreply.github.com
+        name: Tamanon Virulhakieat
+      branch: master
+      committer:
+        email: noreply@github.com
+        name: GitHub
+      message: Update Jenkinsfile
+      sha: acb7a9968fb28988f11649a8594bc839bef51a9c
+    - author:
+        email: 5770882+tamv@users.noreply.github.com
+        name: Tamanon Virulhakieat
+      branch: master
+      committer:
+        email: noreply@github.com
+        name: GitHub
+      message: Create Jenkinsfile
+      sha: 00db8afdd3b2e1024e3a54ed9e390905a5d51b18
+    - author:
+        email: gilesgas@gmail.com
+        name: Giles Gaskell
+      branch: master
+      committer:
+        email: gilesgas@gmail.com
+        name: Giles Gaskell
+      message: |
+        Update README.md with amended tutorial name and URL
+      sha: 998a17289e069ed53c085d3e8d6aac9445ceb263
+    - author:
+        email: gilesgas@gmail.com
+        name: Giles Gaskell
+      branch: master
+      committer:
+        email: noreply@github.com
+        name: GitHub
+      message: |-
+        Update README.md
+
+        Minor clarification.
+      sha: 0b4b552f9962593065e06c0b20ff2314de75aa79
+    - author:
+        email: gilesgas@gmail.com
+        name: Giles Gaskell
+      branch: master
+      committer:
+        email: gilesgas@gmail.com
+        name: Giles Gaskell
+      message: |
+        Update README.md
+
+        * Minor clarification.
+      sha: c875806d113100b012563f0255703db6da910d37
+    - author:
+        email: gilesgas@gmail.com
+        name: Giles Gaskell
+      branch: master
+      committer:
+        email: noreply@github.com
+        name: GitHub
+      message: "Update README.md\n\n* Update name (and link) of tutorial in the Jenkins User Documentation.\r\n* Change 'a script' reference to 'scripts' (since there are more than one)."
+      sha: 34d12c22371f4f0940d3f02cff9a4c9bd58894ec
+    - author:
+        email: gilesgas@gmail.com
+        name: Giles Gaskell
+      branch: master
+      committer:
+        email: gilesgas@gmail.com
+        name: Giles Gaskell
+      message: |
+        Add README.md content
+      sha: e8580902410702dbcef22217e3d7b228592ce6c8
+    - author:
+        email: gilesgas@gmail.com
+        name: Giles Gaskell
+      branch: master
+      committer:
+        email: noreply@github.com
+        name: GitHub
+      message: Update README.md
+      sha: fce8fc227b28a70a2603f92c5f0c1d1fb2427b0e
+    - author:
+        email: gilesgas@gmail.com
+        name: Giles Gaskell
+      branch: master
+      committer:
+        email: gilesgas@gmail.com
+        name: Giles Gaskell
+      message: |
+        Fix typo.
+      sha: 3300edd0985bdb2f93ed93db6a55f2ff0ed0e25d
+    - author:
+        email: gilesgas@gmail.com
+        name: Giles Gaskell
+      branch: master
+      committer:
+        email: gilesgas@gmail.com
+        name: Giles Gaskell
+      message: |
+        Improve description.
+      sha: 48bbae645e42f8c9e922833a4ac43f34ecb2df7d
+    - author:
+        email: gilesgas@gmail.com
+        name: Giles Gaskell
+      branch: master
+      committer:
+        email: gilesgas@gmail.com
+        name: Giles Gaskell
+      message: |
+        Remove superfluous 'set +x' commands.
+      sha: ed373e05e7e03375e6bb99e82dc5e2f59b5b1735
+    - author:
+        email: gilesgas@gmail.com
+        name: Giles Gaskell
+      branch: master
+      committer:
+        email: gilesgas@gmail.com
+        name: Giles Gaskell
+      message: |
+        Add scripts to /jenkins/scripts directory + add Jenkinsfile example.
+
+        * The scripts are 'test.sh', 'deliver.sh' and 'kill.sh', all of which are run as part of the Pipeline's (i.e. Jenkinsfile's) execution.
+        * Jenkinsfile example is added to the /jenkins directory.
+      sha: b7dedaa5fecec15998e006af2820e54ce2f6cd47
+    - author:
+        email: gilesgas@gmail.com
+        name: Giles Gaskell
+      branch: master
+      committer:
+        email: gilesgas@gmail.com
+        name: Giles Gaskell
+      message: |
+        Add simple Create React App project.
+      sha: eb6ee885ef953356721fc4f684c5bf92107c4a0e
+    - author:
+        email: gilesgas@gmail.com
+        name: Giles Gaskell
+      branch: master
+      committer:
+        email: gilesgas@gmail.com
+        name: Giles Gaskell
+      message: |
+        Add .DS_Store to .gitignore
+      sha: 71aad950f2ecec77ca547ee00ba2c155c96d3369
+  gitHttpUrl: https://github.com/tamv/simple-node-js-react-npm-app
+  gitOwner: tamv
+  gitRepository: simple-node-js-react-npm-app
+  name: 'simple-node-js-react-npm-app'
+  releaseNotesURL: https://github.com/tamv/simple-node-js-react-npm-app/releases/tag/v0.1.1
+  version: v0.1.1
+status: {}

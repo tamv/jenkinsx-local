@@ -1,0 +1,8 @@
+# Source: simple-node-js-react-npm-app/templates/sa.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: simple-node-js-react-npm-app-simple-node-js-react-npm-app
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'

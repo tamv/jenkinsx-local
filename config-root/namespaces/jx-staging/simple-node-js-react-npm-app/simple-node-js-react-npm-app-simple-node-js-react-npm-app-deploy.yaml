@@ -1,0 +1,59 @@
+# Source: simple-node-js-react-npm-app/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: simple-node-js-react-npm-app-simple-node-js-react-npm-app
+  labels:
+    draft: draft-app
+    chart: "simple-node-js-react-npm-app-0.1.1"
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  namespace: jx-staging
+  annotations:
+    wave.pusher.com/update-on-config-change: 'true'
+spec:
+  selector:
+    matchLabels:
+      app: simple-node-js-react-npm-app-simple-node-js-react-npm-app
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        draft: draft-app
+        app: simple-node-js-react-npm-app-simple-node-js-react-npm-app
+    spec:
+      serviceAccountName: simple-node-js-react-npm-app-simple-node-js-react-npm-app
+      containers:
+        - name: simple-node-js-react-npm-app
+          image: "10.101.42.61/tamv/simple-node-js-react-npm-app:0.1.1"
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: VERSION
+              value: 0.1.1
+          envFrom: null
+          ports:
+            - containerPort: 8080
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 8080
+            initialDelaySeconds: 60
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 1
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 8080
+            periodSeconds: 10
+            successThreshold: 1
+            timeoutSeconds: 1
+          resources:
+            limits:
+              cpu: 400m
+              memory: 256Mi
+            requests:
+              cpu: 200m
+              memory: 128Mi
+      terminationGracePeriodSeconds:
+      imagePullSecrets:
+        - name: "tekton-container-registry-auth"
