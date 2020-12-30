@@ -8,5 +8,6 @@ spec:
     provider: https://github.com
     providerKind: github
     repositories:
+    - name: jenkins-x-nodejs
     - name: test-jenkins-x-nodejs
     scheduler: in-repo
