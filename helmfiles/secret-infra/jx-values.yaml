@@ -28,6 +28,7 @@ jxRequirements:
     gitName: github
     gitServer: https://github.com
     provider: minikube
+    registry: 10.101.42.61
   environments:
   - key: dev
     owner: tamv
